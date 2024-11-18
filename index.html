@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+
+  <body class="flex items-center justify-center w-full h-screen bg-slate-200">
+    <div
+      class="w-[400px] bg-black dark:bg-white h-[600px] rounded-xl flex items-center flex-col p-8"
+    >
+      <input
+        id="result"
+        class="w-10/12 h-32 text-right text-white text-6xl bg-black placeholder:text-white placeholder:text-[66px]"
+        placeholder="0"
+      />
+      <div class="flex items-center justify-center w-full h-auto">
+        <div class="grid w-full grid-cols-4 gap-2 h-[400px]">
+          <button
+            class="w-11/12 h-full text-xl text-white bg-gray-600 rounded-full"
+            onclick="deleteResult()"
+          >
+            AC
+          </button>
+          <button
+            class="w-11/12 h-full text-xl text-white bg-gray-600 rounded-full"
+          >
+            +/-
+          </button>
+          <button
+            class="w-11/12 h-full text-xl text-white bg-gray-600 rounded-full"
+            onclick="addOperator('%')"
+          >
+            %
+          </button>
+          <button
+            class="w-11/12 h-full text-xl text-white bg-orange-400 rounded-full"
+            onclick="addOperator('/')"
+          >
+            /
+          </button>
+          <button
+            class="w-11/12 h-full text-xl text-white rounded-full bg-slate-800"
+            onclick="number('7')"
+          >
+            7
+          </button>
+          <button
+            class="w-11/12 h-full text-xl text-white rounded-full bg-slate-800"
+            onclick="number('8')"
+          >
+            8
+          </button>
+          <button
+            class="w-11/12 h-full text-xl text-white rounded-full bg-slate-800"
+            onclick="number('9')"
+          >
+            9
+          </button>
+          <button
+            class="w-11/12 h-full text-xl text-white bg-orange-400 rounded-full"
+            onclick="addOperator('x')"
+          >
+            X
+          </button>
+          <button
+            class="w-11/12 h-full text-xl text-white rounded-full bg-slate-800"
+            onclick="number('4')"
+          >
+            4
+          </button>
+          <button
+            class="w-11/12 h-full text-xl text-white rounded-full bg-slate-800"
+            onclick="number('5')"
+          >
+            5
+          </button>
+          <button
+            class="w-11/12 h-full text-xl text-white rounded-full bg-slate-800"
+            onclick="number('6')"
+          >
+            6
+          </button>
+          <button
+            class="w-11/12 h-full text-xl text-white bg-orange-400 rounded-full"
+            onclick="addOperator('-')"
+          >
+            -
+          </button>
+          <button
+            class="w-11/12 h-full text-xl text-white rounded-full bg-slate-800"
+            onclick="number('1')"
+          >
+            1
+          </button>
+          <button
+            class="w-11/12 h-full text-xl text-white rounded-full bg-slate-800"
+            onclick="number('2')"
+          >
+            2
+          </button>
+          <button
+            class="w-11/12 h-full text-xl text-white rounded-full bg-slate-800"
+            onclick="number('3')"
+          >
+            3
+          </button>
+          <button
+            class="w-11/12 h-full text-xl text-white bg-orange-400 rounded-full"
+            onclick="addOperator('+')"
+          >
+            +
+          </button>
+          <button
+            class="h-full col-span-2 text-xl text-white rounded-full bg-slate-800"
+            onclick="number('0')"
+          >
+            0
+          </button>
+          <button
+            class="w-11/12 h-full text-xl text-white rounded-full bg-slate-800"
+          >
+            .
+          </button>
+          <button
+            class="w-11/12 h-full text-xl text-white bg-orange-400 rounded-full"
+            onclick="calcul()"
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
